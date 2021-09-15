@@ -1,0 +1,54 @@
+html { box-sizing: border-box; }
+*, ::before, :after { box-sizing: inherit; }
+
+body {
+    font-family: sans-serif;
+    max-width: 600px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.hraci {
+    display:flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.hrac1, .hrac2 {
+    display: flex;
+}
+
+.hraci img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.hrac-info_wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hrac1 .hrac-info_wrapper {
+    margin-left: 10px;
+}
+
+.hrac2 .hrac-info_wrapper {
+    margin-right: 10px;
+}
+
+.hrac-info_wrapper h2, .hrac-info_wrapper p {
+    margin:0;
+}
+
+.hrac2 {
+    flex-direction: row-reverse;
+}
