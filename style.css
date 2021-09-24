@@ -57,24 +57,26 @@ h1 {
 
 .sachovnice {
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    border: solid 10px #392c16;
-    border-radius: 20px;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
     background-image: url(obrazky/sachovnice.png);
+    border: solid 10px #392c16;
+    border-radius: 5px;
     background-repeat:no-repeat;
-    background-size:cover;
+    background-size: 100% 100%;
     background-position:center;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
+    aspect-ratio: 1 / 1;;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
+.box {
+    aspect-ratio: 1 / 1;
+}
+
 .sachovnice img {
-    max-width: 100%;
+    width: 100%;
+
 }
 
 .box:nth-child(1) {
